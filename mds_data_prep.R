@@ -71,7 +71,7 @@ k.max<-50
 data<-cluster_df
 wsse<-sapply(2:k.max,function(k){kmeans(data, k, nstart = 50, iter.max = 15)$tot.withins})
 
-wsse
+
 
 plot(2:k.max, wsse, type = "b", pch=19, frame=FALSE, xlab = "Number of clusters K", ylab = "Total within-clusters sum of squares")
 
